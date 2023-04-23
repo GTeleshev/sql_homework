@@ -1,4 +1,4 @@
-USE lesson_1;
+USE sql_homework;
 
 DROP TABLE IF EXISTS AUTO;
 
