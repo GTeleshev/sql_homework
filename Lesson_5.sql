@@ -49,9 +49,10 @@ SELECT * FROM SelectedCars;
 
 -- Вывести название и цену для всех анализов, которые продавались 5 февраля 2020 и всю следующую неделю.
 
-DROP TABLE IF EXISTS GroupsT;
-DROP TABLE IF EXISTS Analysis;
 DROP TABLE IF EXISTS Orders;
+DROP TABLE IF EXISTS Analysis;
+DROP TABLE IF EXISTS GroupsT;
+
 
 
 CREATE TABLE GroupsT(
@@ -138,7 +139,6 @@ INSERT INTO Trains (train_id, station, station_time) VALUES
 (120, "Palo Alto", "12:49"),
 (120, "San Jose", "13:30");
 
-SELECT * FROM Trains;
 DROP VIEW IF EXISTS TrainsView;
 CREATE VIEW TrainsView AS
 SELECT 
